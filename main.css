@@ -1,45 +1,66 @@
-.container {
-	margin: 3em auto;
-	width: 600px;
+body {
+	padding: 1em;
+	font-family: 'Helvetica Neue', sans-serif;
 }
-
+hr {
+	margin: 2em 0;
+}
+.container {
+	margin: 2em auto;
+	max-width: 600px;
+}
 .hidden {
 	display: none;
 }
-
 .left {
 	float: left;
 }
-
 .stack-image {
 	background: url('images/stack-icon.png') no-repeat center center;
 	width: 200px;
 	height: 200px;
 	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-right: 1em;
-  border-radius: 5px;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-right: 1em;
+	border-radius: 5px;
 }
-
 .intro {
 	margin-bottom: 1em;
 }
 .stack {
 	clear: both;
 }
-
-.inspiration { 
-	margin-left: 3em;
+.submit {
+	width: 5em;
+	border: none;
+	background-color: #FF9900;
+	color: white;
 }
-
+a {
+	color: #FF9900;
+}
 .result {
 	border: 1px solid black;
-	padding: 5px;
-	margin: 0 auto 1em auto;
+	padding: 1em;
+	margin: 1em auto;
+	width: 100%;
 }
-
+tr {
+	height: 2.5em;
+}
+th {
+	text-align: left;
+	width: 15%;
+	vertical-align: top-text;
+}
+td {
+	padding: 0 2em;
+}
+.user th {
+	width: 20%;
+}
 .error {
 	background-color: #F78181;
 	padding: 1em;

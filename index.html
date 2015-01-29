@@ -23,29 +23,39 @@
 			<p>Find unanswered questions by tag. For multiple tags, use a semi-colon to separate.</p>
 			<form class="unanswered-getter" onsubmit="return false;">
 				<input type="text" placeholder='e.g., "HTML" or "HTML;CSS"' name="tags" size="30" autofocus required>
-				<input type="submit" value="Submit">
+				<input class="submit" type="submit" value="Submit">
 			</form>
 			<h3>View the Top Answerers for a Tag</h3>
+			<p>Only one tag may be used.</p>
 			<form class="inspiration-getter" onsubmit="return false;">
 				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
-				<input type="submit" value="Submit">
+				<input class="submit" type="submit" value="Submit">
 			</form>
 		</div>
+		<hr>
 		<div class="results-container">
 			<div class="search-results"></div>
 			<div class="results"></div>
 		</div>
 	</div>
 	<div class="templates hidden">
-		<dl class="result question">
-			<dt>Question</dt>
-				<dd class="question-text"><a href="" target="_blank"></a></dd>
-			<dt>Asked</dt>
-				<dd class="asked-date"></dd>
-			<dt>Viewed</dt>
-				<dd class="viewed"></dd>
-			<dt>Asker</dt>
-				<dd class="asker"></dd>
+		<table class="result question">
+			<tr>
+				<th>Question</th>
+				<td class="question-text"><a href="" target="_blank"></a></td>
+			</tr>
+			<tr>
+				<th>Asked</th>
+				<td class="asked-date"></td>
+			</tr>
+			<tr>
+				<th>Viewed</th>
+				<td class="viewed"></td>
+			<tr>
+				<th>Asker</th>
+				<td class="asker"></td>
+			</tr>
+		</table>
 		<table class="result user">
 			<tr>
 				<th>User</th>

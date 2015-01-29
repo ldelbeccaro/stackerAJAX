@@ -41,11 +41,10 @@ var showQuestion = function(question) {
 
 	// set some properties related to asker
 	var asker = result.find('.asker');
-	asker.html('<p>Name: <a target="_blank" href=http://stackoverflow.com/users/' + question.owner.user_id + ' >' +
-													question.owner.display_name +
-												'</a>' +
-							'</p>' +
- 							'<p>Reputation: ' + question.owner.reputation + '</p>'
+	asker.html('<p>Name: <a target="_blank" href=http://stackoverflow.com/users/' + 
+		question.owner.user_id + ' >' +
+		question.owner.display_name + '</a><br>Reputation: ' + 
+		question.owner.reputation + '</p>'
 	);
 
 	return result;
